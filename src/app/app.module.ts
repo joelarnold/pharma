@@ -6,13 +6,19 @@ import { AppComponent } from './app.component';
 
 import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
 
+import { ReactiveFormsModule } from '@angular/forms';
+
+import { FormulaComponent } from './pharma/formula/formula.component';
+
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    FormulaComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
+    ReactiveFormsModule,
     BrowserAnimationsModule,
   ],
   providers: [],

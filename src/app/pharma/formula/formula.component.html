@@ -1,0 +1,7 @@
+<form [formGroup]="form" (keyup)="update()">
+  <input type="number" formControlName="weight" /> kg *
+  <input type="number" formControlName="targetDose" /> mg/kg/jour *
+  (1 / {{currentSpecialty.mgPerMl}}) ml/mg =
+  {{dailyMl}} ml/jour =
+  {{intakeMl}} ml (<input type="number" formControlName="intakes" /> fois par jour)
+</form>
