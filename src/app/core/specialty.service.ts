@@ -6,9 +6,7 @@ import { Specialty } from './specialty.model';
 })
 export class SpecialtyService {
 
-  constructor() { }
-
   getSpecialties(): Specialty[] {
-    return [new Specialty('test1', 25), new Specialty('test2', 50)];
+    return [new Specialty('test1', 25, 15), new Specialty('test2', 50, 20)];
   }
 }

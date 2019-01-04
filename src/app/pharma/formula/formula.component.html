@@ -1,19 +1,19 @@
 <form [formGroup]="form" (keyup)="update()">
   <div>
     <label for="specialty">Spécialité : </label>
-    <select id="specialty" formControlName="mgPerMl">
-      <option *ngFor="let specialty of specialtyService.getSpecialties()" [value]="specialty.mgPerMl">{{specialty.name}}</option>
+    <select id="specialty" formControlName="specialty">
+      <option *ngFor="let specialty of specialties" [ngValue]="specialty">{{specialty.name}}</option>
     </select>
   </div>
   <div>
     <input type="number" formControlName="weight" /> kg &times;
     <input type="number" formControlName="targetDose" /> mg/kg/jour &times;
-    (1/{{form.controls.mgPerMl.value}}) ml/mg
+    (1/{{form.controls.specialty.value.mgPerMl}}) ml/mg
   </div>
   <div>
     => {{dailyMl}} ml/jour
   </div>
   <div>
-    => {{intakeMl}} ml (<input type="number" formControlName="intakes" /> fois par jour)
+    => {{intakeMl}} ml (<input type="number" formControlName="intakes" min="1" max="9" /> fois par jour)
   </div>
 </form>

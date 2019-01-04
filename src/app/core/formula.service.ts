@@ -5,8 +5,6 @@ import { Injectable } from '@angular/core';
 })
 export class FormulaService {
 
-  constructor() { }
-
   /**
    * Compute two values from the inputs: 1. the daily total amount to reach the target dose, 2. the volume per intake
    * @param mgPerMl the concentration of active substance per ml of solution

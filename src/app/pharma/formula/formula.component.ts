@@ -13,30 +13,36 @@ import { FormulaService } from 'src/app/core/formula.service';
 })
 export class FormulaComponent implements OnInit {
 
+  specialties: Specialty[];
   form: FormGroup;
   dailyMl: number;
   intakeMl: number;
 
   constructor(private formBuilder: FormBuilder, private specialtyService: SpecialtyService, private formulaService: FormulaService) {
-    const firstSpecialty = specialtyService.getSpecialties()[0];
+    this.specialties = specialtyService.getSpecialties();
     this.form = this.formBuilder.group({
-      mgPerMl: firstSpecialty.mgPerMl,
-      weight: [35],
-      targetDose: [15],
-      intakes: [3],
+      specialty: this.specialties[0],
+      weight: '',
+      targetDose: 15,
+      intakes: 3,
     });
   }
 
   ngOnInit() {
-    this.update();
-    this.form.valueChanges.subscribe(() => {
-      this.update();
+    this.update(this.form.value);
+    this.form.valueChanges.subscribe((formObject) => {
+      this.update(formObject);
     });
   }
 
-  update() {
-    this.formulaService.compute(
-      this.form.get('mgPerMl').value, this.form.get('weight').value, this.form.get('targetDose').value, this.form.get('intakes').value);
+  update(formObject: object) {
+    if (formObject) {
+      [this.dailyMl, this.intakeMl] = this.formulaService.compute(
+        formObject['specialty'].mgPerMl,
+        formObject['weight'],
+        formObject['targetDose'],
+        formObject['intakes']);
+    }
   }
 
 }
