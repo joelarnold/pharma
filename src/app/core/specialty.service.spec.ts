@@ -12,6 +12,6 @@ describe('SpecialtyService', () => {
 
   it('should be return an array of specialties', () => {
     const service: SpecialtyService = TestBed.get(SpecialtyService);
-    expect(service.getSpecialties().length).toBe(1);
+    expect(service.getSpecialties().length).toBe(2);
   });
 });
