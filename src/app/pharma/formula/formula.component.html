@@ -1,5 +1,5 @@
 <div>
-  <form clrForm clrLayout="compact" [formGroup]="form" (keyup)="update()">
+  <form clrForm clrLayout="compact" [formGroup]="form">
     <clr-select-container>
       <label for="specialty">Spécialité</label>
       <select clrSelect id="specialty" formControlName="specialty">
@@ -24,8 +24,8 @@
   <p class="result">
     {{form.controls.weight.value}} kg &times;
     {{form.controls.targetDose.value}} mg/kg/jour &divide;
-    {{form.controls.specialty.value.mgPerMl}} mg/ml <br/>
-    &#8658; {{dailyMl}} ml/jour <br/>
+    {{form.controls.specialty.value.mgPerMl}} mg/ml <br />
+    &#8658; {{dailyMl}} ml/jour <br />
     &#8658; {{intakeMl}} ml ({{form.controls.intakes.value}} fois par jour)
   </p>
 </div>
