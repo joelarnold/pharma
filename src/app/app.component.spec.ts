@@ -3,6 +3,7 @@ import { RouterTestingModule } from '@angular/router/testing';
 import { AppComponent } from './app.component';
 import { FormulaComponent } from './pharma/formula/formula.component';
 import { ReactiveFormsModule } from '@angular/forms';
+import { ClarityModule } from '@clr/angular';
 
 describe('AppComponent', () => {
   beforeEach(async(() => {
@@ -10,6 +11,7 @@ describe('AppComponent', () => {
       imports: [
         RouterTestingModule,
         ReactiveFormsModule,
+        ClarityModule,
       ],
       declarations: [
         AppComponent,

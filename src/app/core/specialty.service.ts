@@ -7,6 +7,6 @@ import { Specialty } from './specialty.model';
 export class SpecialtyService {
 
   getSpecialties(): Specialty[] {
-    return [new Specialty('test1', 25, 15), new Specialty('test2', 50, 20)];
+    return [new Specialty('Clindamycine 125mg/5ml', 25, 15), new Specialty('Clindamycine 250mg/5ml', 50, 15)];
   }
 }

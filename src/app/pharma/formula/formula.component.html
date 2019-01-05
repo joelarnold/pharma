@@ -1,19 +1,31 @@
-<form [formGroup]="form" (keyup)="update()">
-  <div>
-    <label for="specialty">Spécialité : </label>
-    <select id="specialty" formControlName="specialty">
-      <option *ngFor="let specialty of specialties" [ngValue]="specialty">{{specialty.name}}</option>
-    </select>
-  </div>
-  <div>
-    <input type="number" formControlName="weight" /> kg &times;
-    <input type="number" formControlName="targetDose" /> mg/kg/jour &times;
-    (1/{{form.controls.specialty.value.mgPerMl}}) ml/mg
-  </div>
-  <div>
-    => {{dailyMl}} ml/jour
-  </div>
-  <div>
-    => {{intakeMl}} ml (<input type="number" formControlName="intakes" min="1" max="9" /> fois par jour)
-  </div>
-</form>
+<div>
+  <form clrForm clrLayout="compact" [formGroup]="form" (keyup)="update()">
+    <clr-select-container>
+      <label for="specialty">Spécialité</label>
+      <select clrSelect id="specialty" formControlName="specialty">
+        <option *ngFor="let specialty of specialties" [ngValue]="specialty">{{specialty.name}}</option>
+      </select>
+    </clr-select-container>
+    <clr-input-container>
+      <label for="weight">Poids [kg]</label>
+      <input clrInput type="number" formControlName="weight" />
+    </clr-input-container>
+    <clr-input-container>
+      <label for="targetDose">Dose journalière [mg]</label>
+      <input clrInput type="number" formControlName="targetDose" />
+    </clr-input-container>
+    <clr-input-container>
+      <label for="intakes">Prises par jour</label>
+      <input clrInput type="number" formControlName="intakes" min="1" max="9" />
+    </clr-input-container>
+  </form>
+</div>
+<div *ngIf="dailyMl > 0">
+  <p class="result">
+    {{form.controls.weight.value}} kg &times;
+    {{form.controls.targetDose.value}} mg/kg/jour &divide;
+    {{form.controls.specialty.value.mgPerMl}} mg/ml <br/>
+    &#8658; {{dailyMl}} ml/jour <br/>
+    &#8658; {{intakeMl}} ml ({{form.controls.intakes.value}} fois par jour)
+  </p>
+</div>

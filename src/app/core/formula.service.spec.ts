@@ -13,6 +13,6 @@ describe('FormulaService', () => {
   it('should compute proper value', () => {
     const service: FormulaService = TestBed.get(FormulaService);
     const result = service.compute(50, 35, 25, 2);
-    expect(result).toEqual([17.5, 8.75]);
+    expect(result).toEqual([17.5, 8.8]);
   });
 });

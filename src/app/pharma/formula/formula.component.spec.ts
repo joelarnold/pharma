@@ -2,6 +2,7 @@ import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 
 import { FormulaComponent } from './formula.component';
 import { ReactiveFormsModule } from '@angular/forms';
+import { ClarityModule } from '@clr/angular';
 
 describe('FormulaComponent', () => {
   let component: FormulaComponent;
@@ -11,6 +12,7 @@ describe('FormulaComponent', () => {
     TestBed.configureTestingModule({
       imports: [
         ReactiveFormsModule,
+        ClarityModule,
       ],
       declarations: [ FormulaComponent ]
     })

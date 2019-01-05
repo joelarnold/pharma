@@ -13,8 +13,8 @@ export class FormulaService {
    * @param intakes the number of intakes per day
    */
   compute(mgPerMl: number, weight: number, targetDose: number, intakes: number): [number, number] {
-    const dailyMl = this.round(weight * targetDose * (1 / mgPerMl), 2);
-    const intakeMl = this.round(dailyMl / intakes, 2);
+    const dailyMl = this.round(weight * targetDose * (1 / mgPerMl), 1);
+    const intakeMl = this.round(dailyMl / intakes, 1);
     return [dailyMl, intakeMl];
   }
 
