@@ -2,8 +2,6 @@ import { Component, OnInit } from '@angular/core';
 import { Specialty } from 'src/app/core/specialty.model';
 import { SpecialtyService } from 'src/app/core/specialty.service';
 import { FormGroup, FormBuilder, Validators } from '@angular/forms';
-import { Observable, combineLatest } from 'rxjs';
-import { updateBinding } from '@angular/core/src/render3/instructions';
 import { FormulaService } from 'src/app/core/formula.service';
 
 @Component({
