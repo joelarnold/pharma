@@ -6,9 +6,10 @@ import { SpecialtyDosageComponent } from './specialty-dosage/specialty-dosage.co
 import { ReactiveFormsModule } from '@angular/forms';
 import { ClarityModule } from '@clr/angular';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { ConcentrationDosageComponent } from './concentration-dosage/concentration-dosage.component';
 
 @NgModule({
-  declarations: [SpecialtyDosageComponent],
+  declarations: [SpecialtyDosageComponent, ConcentrationDosageComponent],
   imports: [
     CommonModule,
     FormuliRoutingModule,

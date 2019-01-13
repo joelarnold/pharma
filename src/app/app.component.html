@@ -1,10 +1,16 @@
 <clr-main-container>
-  <header class="header-6">
+  <clr-header>
     <div class="branding">
-      <a href="">
-        <span class="title">Pharm'Assist</span></a>
+      <a routerLink="">
+        <span class="title">Pharm'Assist</span>
+      </a>
     </div>
-  </header>
+    <div class="header-nav" [clr-nav-level]="1">
+      <a routerLink="/form/spec" routerLinkActive="active" class="nav-link nav-text">Dosage par spécialité</a>
+      <a routerLink="/form/conc" routerLinkActive="active" class="nav-link nav-text">Dosage par concentration</a>
+    </div>
+  </clr-header>
+
   <div class="content-container">
     <div class="content-area">
       <router-outlet></router-outlet>
