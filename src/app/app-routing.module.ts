@@ -3,11 +3,8 @@ import { Routes, RouterModule } from '@angular/router';
 
 const routes: Routes = [{
   path: '',
-  redirectTo: 'form',
+  loadChildren: './formuli/formuli.module#FormuliModule',
   pathMatch: 'full'
-}, {
-  path: 'form',
-  loadChildren: './formuli/formuli.module#FormuliModule'
 }];
 
 @NgModule({
