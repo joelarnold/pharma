@@ -1,15 +1,15 @@
 import { Component, OnInit } from '@angular/core';
 import { Specialty } from 'src/app/core/specialty.model';
 import { SpecialtyService } from 'src/app/core/specialty.service';
-import { FormGroup, FormBuilder, Validators } from '@angular/forms';
+import { FormGroup, FormBuilder } from '@angular/forms';
 import { FormulaService } from 'src/app/core/formula.service';
 
 @Component({
-  selector: 'app-formula',
-  templateUrl: './formula.component.html',
-  styleUrls: ['./formula.component.scss']
+  selector: 'app-specialty-dosage',
+  templateUrl: './specialty-dosage.component.html',
+  styleUrls: ['./specialty-dosage.component.scss']
 })
-export class FormulaComponent implements OnInit {
+export class SpecialtyDosageComponent implements OnInit {
 
   specialties: Specialty[];
   form: FormGroup;

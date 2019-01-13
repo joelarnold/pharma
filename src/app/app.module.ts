@@ -6,7 +6,6 @@ import { AppComponent } from './app.component';
 
 import { ReactiveFormsModule } from '@angular/forms';
 
-import { FormulaComponent } from './pharma/formula/formula.component';
 import { ServiceWorkerModule } from '@angular/service-worker';
 import { environment } from '../environments/environment';
 import { ClarityModule } from '@clr/angular';
@@ -15,7 +14,6 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 @NgModule({
   declarations: [
     AppComponent,
-    FormulaComponent
   ],
   imports: [
     BrowserModule,

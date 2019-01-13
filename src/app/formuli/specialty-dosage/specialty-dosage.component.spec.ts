@@ -1,12 +1,12 @@
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { FormulaComponent } from './formula.component';
+import { SpecialtyDosageComponent } from './specialty-dosage.component';
 import { ReactiveFormsModule } from '@angular/forms';
 import { ClarityModule } from '@clr/angular';
 
-describe('FormulaComponent', () => {
-  let component: FormulaComponent;
-  let fixture: ComponentFixture<FormulaComponent>;
+describe('SpecialtyDosageComponent', () => {
+  let component: SpecialtyDosageComponent;
+  let fixture: ComponentFixture<SpecialtyDosageComponent>;
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
@@ -14,13 +14,13 @@ describe('FormulaComponent', () => {
         ReactiveFormsModule,
         ClarityModule,
       ],
-      declarations: [ FormulaComponent ]
+      declarations: [ SpecialtyDosageComponent ]
     })
     .compileComponents();
   }));
 
   beforeEach(() => {
-    fixture = TestBed.createComponent(FormulaComponent);
+    fixture = TestBed.createComponent(SpecialtyDosageComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

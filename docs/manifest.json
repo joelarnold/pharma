@@ -1,7 +1,7 @@
 {
-  "name": "pharma",
-  "short_name": "pharma",
-  "theme_color": "#1976d2",
+  "name": "Pharm'Assist",
+  "short_name": "Pharm'Assist",
+  "theme_color": "#2F8400",
   "background_color": "#fafafa",
   "display": "standalone",
   "start_url": ".",
