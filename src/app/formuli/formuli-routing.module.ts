@@ -11,7 +11,7 @@ const routes: Routes = [{
   component: ConcentrationDosageComponent
 }, {
   path: '',
-  redirectTo: 'spec'
+  redirectTo: 'conc'
 }];
 
 @NgModule({

@@ -1,6 +1,8 @@
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 
 import { ConcentrationDosageComponent } from './concentration-dosage.component';
+import { ReactiveFormsModule } from '@angular/forms';
+import { ClarityModule } from '@clr/angular';
 
 describe('ConcentrationDosageComponent', () => {
   let component: ConcentrationDosageComponent;
@@ -8,6 +10,10 @@ describe('ConcentrationDosageComponent', () => {
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
+      imports: [
+        ReactiveFormsModule,
+        ClarityModule,
+      ],
       declarations: [ ConcentrationDosageComponent ]
     })
     .compileComponents();

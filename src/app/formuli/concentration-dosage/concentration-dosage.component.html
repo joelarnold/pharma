@@ -1,3 +1,29 @@
-<p>
-  Bientôt disponible!
-</p>
+<div>
+  <form clrForm clrLayout="compact" [formGroup]="form">
+    <clr-input-container>
+      <label for="dosage">Concentration [mg/ml]</label>
+      <input clrInput type="number" formControlName="dosage" />
+    </clr-input-container>
+    <clr-input-container>
+      <label for="weight">Poids [kg]</label>
+      <input clrInput type="number" formControlName="weight" />
+    </clr-input-container>
+    <clr-input-container>
+      <label for="targetDose">Dose journalière [mg]</label>
+      <input clrInput type="number" formControlName="targetDose" />
+    </clr-input-container>
+    <clr-input-container>
+      <label for="intakes">Prises par jour</label>
+      <input clrInput type="number" formControlName="intakes" min="1" max="9" />
+    </clr-input-container>
+  </form>
+</div>
+<div *ngIf="dailyMl > 0">
+  <p class="result">
+    {{form.controls.weight.value}} kg &times;
+    {{form.controls.targetDose.value}} mg/kg/jour &divide;
+    {{form.controls.dosage.value}} mg/ml <br />
+    &#8658; {{dailyMl}} ml/jour <br />
+    &#8658; {{intakeMl}} ml ({{form.controls.intakes.value}} fois par jour)
+  </p>
+</div>
