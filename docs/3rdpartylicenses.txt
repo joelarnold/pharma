@@ -1,3 +1,27 @@
+@angular/animations
+MIT
+
+@angular/common
+MIT
+
+@angular/core
+MIT
+
+@angular/forms
+MIT
+
+@angular/platform-browser
+MIT
+
+@angular/router
+MIT
+
+@angular/service-worker
+MIT
+
+@clr/angular
+MIT
+
 @clr/icons
 MIT
 
@@ -210,24 +234,6 @@ Apache-2.0
  
 
 
-@angular/core
-MIT
-
-@angular/common
-MIT
-
-@angular/router
-MIT
-
-@angular/platform-browser
-MIT
-
-@angular/forms
-MIT
-
-@angular/animations
-MIT
-
 tslib
 Apache-2.0
 Apache License
@@ -286,12 +292,6 @@ If the Work includes a "NOTICE" text file as part of its distribution, then any 
 
 END OF TERMS AND CONDITIONS
 
-
-@clr/angular
-MIT
-
-@angular/service-worker
-MIT
 
 zone.js
 MIT
