@@ -7,7 +7,7 @@ const routes: Routes = [{
   pathMatch: 'full'
 }, {
   path: 'form',
-  loadChildren: './formuli/formuli.module#FormuliModule'
+  loadChildren: () => import('./formuli/formuli.module').then(m => m.FormuliModule)
 }];
 
 @NgModule({
