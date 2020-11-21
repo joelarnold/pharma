@@ -1,6 +1,7 @@
-import { OnInit } from '@angular/core';
+import { OnInit, Directive } from '@angular/core';
 import { FormGroup } from '@angular/forms';
 
+@Directive()
 export abstract class BaseDosageComponent implements OnInit {
 
   dailyMl: number;

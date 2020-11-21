@@ -1,22 +1,25 @@
 {
   "configVersion": 1,
-  "timestamp": 1588495612517,
+  "timestamp": 1605977185074,
   "index": "/pharma/index.html",
   "assetGroups": [
     {
       "name": "app",
       "installMode": "prefetch",
       "updateMode": "prefetch",
+      "cacheQueryOptions": {
+        "ignoreVary": true
+      },
       "urls": [
-        "/pharma/5.81ed6bbb4b5770a3a70f.js",
+        "/pharma/5.150424bd2d0e4547379b.js",
         "/pharma/favicon.ico",
         "/pharma/index.html",
-        "/pharma/main.50a67bf68b7b6d37cebe.js",
-        "/pharma/polyfills-es5.334e89cdb42195c2c7e0.js",
-        "/pharma/polyfills.46a372384ca106e6e7a7.js",
-        "/pharma/runtime.8c460a1e318ef03b1e95.js",
-        "/pharma/scripts.6e550852d9d22c7cd857.js",
-        "/pharma/styles.85f7c45bc2633b3f5913.css"
+        "/pharma/main.7ebd0f9f75d54fb553dc.js",
+        "/pharma/polyfills-es5.38dd4a15d310ec0608db.js",
+        "/pharma/polyfills.9b42fb72e1f42dfc2636.js",
+        "/pharma/runtime.a5fe118374d593f8de5b.js",
+        "/pharma/scripts.0cfb697d14e9a005a6fd.js",
+        "/pharma/styles.519090509fe28858cd43.css"
       ],
       "patterns": []
     },
@@ -24,6 +27,9 @@
       "name": "assets",
       "installMode": "lazy",
       "updateMode": "prefetch",
+      "cacheQueryOptions": {
+        "ignoreVary": true
+      },
       "urls": [
         "/pharma/assets/icons/icon-128x128.png",
         "/pharma/assets/icons/icon-144x144.png",
@@ -39,7 +45,7 @@
   ],
   "dataGroups": [],
   "hashTable": {
-    "/pharma/5.81ed6bbb4b5770a3a70f.js": "42f7cc04768adbe43c1662e240b011d37a6dcb9f",
+    "/pharma/5.150424bd2d0e4547379b.js": "ad8edcf07e7ed5a9f75a293a470f539652cb491b",
     "/pharma/assets/icons/icon-128x128.png": "af66d3969444ff3af53bb9f8ab06f8b2c2e0eb1d",
     "/pharma/assets/icons/icon-144x144.png": "700507c03859cc623b27152ad1abeec77b1055b9",
     "/pharma/assets/icons/icon-152x152.png": "19193a44ef24944f31cf1fa69ab1af400c2f5402",
@@ -49,13 +55,13 @@
     "/pharma/assets/icons/icon-72x72.png": "a589f7912f625063480234734840dd5998fc7f21",
     "/pharma/assets/icons/icon-96x96.png": "566dd4948693b6240ccaf6d424d4bddd6dadc925",
     "/pharma/favicon.ico": "3f9e01dadbfa25e25e097f146f015825d3daf6d2",
-    "/pharma/index.html": "6f2658738f87baf9ae3d5c74d7f45a76e6ce348f",
-    "/pharma/main.50a67bf68b7b6d37cebe.js": "4a3d408b3bc31fe583ed8c94daea3269f0282a0f",
-    "/pharma/polyfills-es5.334e89cdb42195c2c7e0.js": "b1f93ab7008e8884fca369c8ba75da0440fddc3d",
-    "/pharma/polyfills.46a372384ca106e6e7a7.js": "00d68f6bec8622ed1a323563d0a30dd7a541895c",
-    "/pharma/runtime.8c460a1e318ef03b1e95.js": "cb0df075db5b3a5c718fa4fe2a48dbf49350f58e",
-    "/pharma/scripts.6e550852d9d22c7cd857.js": "625e58c14e4aecd0d58f2280fba642f32d1bdc35",
-    "/pharma/styles.85f7c45bc2633b3f5913.css": "a31e0532fbebda31e68fa1fdb8ffe808f472e224"
+    "/pharma/index.html": "c6aee141bbf034cc23bdbbda9e18dbbdf50e4422",
+    "/pharma/main.7ebd0f9f75d54fb553dc.js": "408ddb05ac2dbc5d4a164f90ce3384402db1ffd2",
+    "/pharma/polyfills-es5.38dd4a15d310ec0608db.js": "2587bedb0522815b7f8aab72dfa34502875f4c59",
+    "/pharma/polyfills.9b42fb72e1f42dfc2636.js": "4333975be8f65d73d984fddc173870899b9e5e00",
+    "/pharma/runtime.a5fe118374d593f8de5b.js": "6196f74593872046aea3546a54c85a561f4d7d4e",
+    "/pharma/scripts.0cfb697d14e9a005a6fd.js": "940f3412d43215d7a598310cf6a483406a9871cc",
+    "/pharma/styles.519090509fe28858cd43.css": "ab3e6ae8541b83d41b7f64c8a262f6b0ed384d57"
   },
   "navigationUrls": [
     {
@@ -74,5 +80,6 @@
       "positive": false,
       "regex": "^\\/(?:.+\\/)?[^/]*__[^/]*\\/.*$"
     }
-  ]
+  ],
+  "navigationRequestStrategy": "performance"
 }
